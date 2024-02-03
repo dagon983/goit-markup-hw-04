@@ -44,6 +44,7 @@ header {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -208,7 +209,6 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px; 
-    margin-top: 8px; 
 }
 
 .second-list-text {
@@ -218,10 +218,15 @@ header {
 }
 
 .second-icon-box {
-    padding: 24px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
     background-color: #F4F4FD;
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    margin-bottom: 8px;
+
 }
 
 .third-list-table {
@@ -240,7 +245,7 @@ header {
 }
 
 .third-name-job {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .third-title {
@@ -297,8 +302,8 @@ header {
     justify-content: center;
 }
 
-.social-list-item:hover  .icon-link,
-.social-list-item:focus  .icon-link{
+.icon-link:hover,
+.icon-link:focus {
     background-color: #404BBF;
 }
 
@@ -373,7 +378,7 @@ header {
 }
 
 .fourth-list-items:hover {
-    box-shadow: 0 1px 6px 0 #2E2F42, 0 1px 1px 0 #2E2F42, 0 2px 1px 0 #2E2F42;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 
 .footer {
@@ -421,14 +426,8 @@ header {
 }
 
 .footer-social-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
-    height: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+    height: 40px;    
 }
 
 .footer-icon {
@@ -442,9 +441,25 @@ header {
 
 .footer-max-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
 }
 
-.footer-social-items:hover{
+.logo-text-container {
+    margin-right: 120px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: #31D0AA;
 }
